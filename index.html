@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreaTuPizza</title>
+</head>
+<body>
+        <h1>Crea tu Pizza</h1>
+        <form id="pizza-form">
+            <label for="masa">¿Qué masa de pizza deseas?</label>
+            <select id="masa" name="masa">
+                <option value="Delgada">Delgada</option>
+                <option value="Tradicional">Tradicional</option>
+                <option value="Integral">Integral</option>
+            </select>
+            <br>
+            <label for="ingredientes">Agrega ingredientes a tu pizza:</label>
+            <select id="ingrediente" name="ingrediente">
+                <option value="pepperoni">Pepperoni - $2.5</option>
+                <option value="champiñones">Champiñones - $1.5</option>
+                <option value="jamón">Jamón - $2.0</option>
+                <option value="pimientos">Pimientos - $1.0</option>
+                <option value="cebolla">Cebolla - $1.0</option>
+                <option value="aceitunas">Aceitunas - $1.5</option>
+                <option value="choclo">Choclo - $1.0</option>
+                <option value="tomate">Tomate - $1.0</option>
+                <option value="carne">Carne - $2.0</option>
+                <option value="pollo">Pollo - $2.0</option>
+                <option value="extraqueso">Extra Queso - $2.0</option>
+            </select>
+            <input type="number" id="cantidad" name="cantidad" placeholder="Cantidad">
+            <button id="agregar">Agregar</button>
+            <br>
+    
+            <ul id="ingredientes-list">
+            </ul>
+    
+            <p id="total">Total: $0.00</p>
+            
+            <button type="submit">Hacer Pedido</button>
+        </form>
+
+        <div id="pizzaInfo"></div>
+    
+        <script src="main.js"></script>
+
+</body>
+</html>
